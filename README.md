@@ -16,7 +16,7 @@ Note that the empirical analysis (code module x) uses natrual gas power plant da
 Code: Includes code required to run the analysis and produce the figures. Code is structured in several modules which need to be run sequentially, as they build on each other.
 
 **1) Empirics - Model:** 
- ---- Cost competitiveness forecast and extension to 2100
+Cost competitiveness forecast and extension to 2100
  ---- Estimation of empirical diffusion model (fitted to natural gas power plants)
  ---- Extended Data Figure 1: Distribution of predictors in the diffusion model
  ---- Supplementary Figure 1: Capacity of natural gas power plants

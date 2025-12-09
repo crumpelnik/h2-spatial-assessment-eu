@@ -77,12 +77,17 @@ Data can be obtained via the Power Plant Unit Screener function in S&P Capital I
 - Gen tech: **Natural Gas**  
   (or **Wind** for robustness tests)
 
+6)  second_pass_coefs.rds
+
+Extracted coefficients from regression in empirical analysis module. This file can be used if there is no access to the underlying (commercial) data needed to run the empirical analysis modules.
+
 ---
 
 ### Code
 
 Includes all code required to run the analysis and reproduce the figures.  
-The code is structured into sequential modules that build on one another and must be run in order.
+The code is structured into sequential modules that build on one another and must be run in order. Note that for running Modules 1 and 2 (Empirical analysis) access to S&P Capital IQ proprietary and commercial data is required (see above).
+However, the code and datafiles are structured in a way that simulation and network analysis (starting with module 3) can be run without running the empirical analysis beforehand, with limited adjustments (commenting in and out) in Module 3.
 
 ---
 
@@ -113,12 +118,13 @@ The code is structured into sequential modules that build on one another and mus
 - Preparation of offtaker dataset (e.g. aggregation of heavy-duty transport)
 - Calculation of predictor variables on the hydrogen offtaker dataset
 - Simulation of baseline green hydrogen demand projections
-- **Figure 5:** Baseline projections of expected green hydrogen demand before policy intervention  
-- **Supplementary Figure 5:** Baseline projections using wind as historical analogue  
-  - Uses Figure 5 code  
-  - Produced when *Empirics – Model* is first run for wind  
+- **Figure 5:** Baseline projections of expected green hydrogen demand before policy intervention
+- - **Supplementary Figure 5:** Baseline projections of expected green hydrogen demand before policy intervention using wind as historical analogue
+  - Uses Figure 5 code; produced when *Empirics – Model* is first run for wind
+  - **Supplementary Figure 8:** Baseline projections using wind as historical analogue assuming flat carbon prices. 
+  - Uses Figure 5 code; produced when *Empirics – Model* and *Simulation – Model* are first run with carbon_price_setting = flat_carbon_price
 - **Extended Data Tables 2 and 3**
-
+- **Supplementary Figure 11:** Map of baseline green H2 demand prior to policy intervention (central saturation + mean cost scenario, 2050)
 ---
 
 #### **4) Network – Centrality**
@@ -137,8 +143,18 @@ The code is structured into sequential modules that build on one another and mus
 
 #### **6) Simulation – Policy - Effectiveness**
 
--Computation of network centrality scores (marker for spillover potential)
-- **Figure 3:** Spatial spillover poptential of green H2 offtakers across regions
-- **Figure 4:** Spatial spillover poptential of green H2 offtakers across sectors
-- **Extended Data Figure 3:** Distribution of spillover potential excl. heating
+-  **Figure 6:** Differences in expected green H2 demand and policy cost effectiveness for a spatially targeted demand-side CfD
+- **Supplementary Figure 9:** Differences in expected green H2 demand and policy cost effectiveness for a spatially targeted demand-side CfD: Results for alternative baselines
+- **Supplementary Figure 10:** Expected green H2 demand and policy cost effectiveness for a spatially targeted demand-side CfD
 
+---
+
+#### **7) Simulation – Treatment
+
+- **Extended Data Figure 2:** Spatial distribution of offtakers targeted by spatially targeted CfD regime
+
+---
+
+#### **8) SI - Carbon Price
+
+- **Supplementary Figure 7:** Carbon price projections in EUR/t C02 equivalent

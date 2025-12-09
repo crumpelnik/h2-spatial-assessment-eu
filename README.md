@@ -12,10 +12,25 @@ Data and code repository for
 
 Includes open-source data files required to run the analysis, including:
 
-1)  
-2)  
-3)  
-4)  
+1)  INET_PipeSegments-geojson
+
+Open-source geojson file from SciGrid Gas (https://arxiv.org/abs/2201.08827) including natural gas pipeline segment geodata. Data is used to calculate proximity between individual natural gas power plants (empirical analysis) and h2 offtakers (simulation) and high order natural gas pipeline corridors.
+
+2)  cost_competitiveness_fossil.xlsx
+
+Cost time series data (up to 2050) for fossil incumbents based on Odenweller and Ueckerdt (2025). The green hydrogen ambition and implementation gaps. Raw original data files are accessible in their Github repository (https://github.com/aodenweller/green-hydrogen-gap/tree/master). Includes an xlsx computation module for the estimation of a flat carbon price scenario.
+
+3)  cost_competitiveness_green.xlsx
+
+Cost time series data (up to 2050) for green hydrogen and derivatives based on Odenweller and Ueckerdt (2025). The green hydrogen ambition and implementation gaps. Raw original data files are accessible in their Github repository (https://github.com/aodenweller/green-hydrogen-gap/tree/master) 
+
+4)  h2_database.xlsx
+
+Original database of 14,000+ potential green hydrogen offtakers aggregating information from multiple data sources (including ETS and Eurostat). Details on database build-up are disclosed in the Methods section of the article. Additional information on the database build-up is available upon request.
+
+5) emission_factors_secs.xlsx
+
+Supplementary file documenting the estimation, sourcing and allocation of emissions benchmarks and hydrogen-specific energy consumption factors on a sub-activity level.
 
 **Note:**  
 The empirical analysis (Code Module *Empirics – Model*) uses natural gas power plant data from **S&P Capital IQ**, which is a commercial data source. Running this module therefore requires a valid S&P Capital IQ subscription.
@@ -23,8 +38,8 @@ The empirical analysis (Code Module *Empirics – Model*) uses natural gas power
 Data can be obtained via:
 
 - *Screener* → *Power Plants*
-- Region: European Union  
-- Generation technology: **Natural Gas**  
+- European Union Countries
+- Gen tech: **Natural Gas**  
   (or **Wind** for robustness tests)
 
 ---

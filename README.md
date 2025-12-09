@@ -28,7 +28,7 @@ Cost time series data (up to 2050) for green hydrogen and derivatives based on O
 
 Original database of 14,000+ potential green hydrogen offtakers aggregating information from multiple data sources (including ETS and Eurostat). Details on database build-up are disclosed in the Methods section of the article. Additional information on the database build-up is available upon request. Variable list below.
 
-## Data fields
+#### Data fields
 
 | Variable name | Description |
 |--------------|-------------|

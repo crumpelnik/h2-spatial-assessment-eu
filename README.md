@@ -129,13 +129,13 @@ The code is structured into sequential modules that build on one another and mus
 - **Extended Data Figure 3:** Distribution of spillover potential excl. heating
 
 ---
-#### **5) Simulation - Policy - Intervention **
+#### **6) Simulation – Policy - Intervention**
 
 - Policy intervention simulation
 
 ---
 
-#### **6) Network – Policy - Effectiveness**
+#### **6) Simulation – Policy - Effectiveness**
 
 -Computation of network centrality scores (marker for spillover potential)
 - **Figure 3:** Spatial spillover poptential of green H2 offtakers across regions

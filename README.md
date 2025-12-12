@@ -2,7 +2,7 @@
 
 Data and code repository for  
 **Rumpelnik, C., Zakeri, B., Surana, K.**  
-*Spatially-Informed Demand-Side Policies for Green Hydrogen Diffusion in Europe.*
+*Spatially Informed Demand-Side Policies for Green Hydrogen Diffusion in Europe.*
 
 ---
 

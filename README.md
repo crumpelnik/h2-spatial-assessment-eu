@@ -2,7 +2,7 @@
 
 Data and code repository for  
 **Rumpelnik, C., Zakeri, B., Surana, K.**  
-*A spatially resolved assessment of green hydrogen diffusion in Europe.*
+*Spatially-Informed Demand-Side Policies for Green Hydrogen Diffusion in Europe.*
 
 ---
 

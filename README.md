@@ -89,6 +89,49 @@ Includes all code required to run the analysis and reproduce the figures.
 The code is structured into sequential modules that build on one another and must be run in order. Note that for running Modules 1 and 2 (Empirical analysis) access to S&P Capital IQ proprietary and commercial data is required (see above).
 However, the code and datafiles are structured in a way that simulation and network analysis (starting with module 3) can be run without running the empirical analysis beforehand, with limited adjustments (commenting in and out) in Module 3.
 
+#### How to run this code
+
+This repository contains a Jupyter Notebook (.ipynb) written in R. To run it, you need R and the R Jupyter kernel (IRkernel). You can set up the environment following these steps:
+
+1. Install R
+Download and install R from:
+https://cran.r-project.org/
+
+Alternatively, using Conda:
+conda create -n r_env r-base
+conda activate r_env
+
+2. Install the R Jupyter Kernel
+
+Start R and run:
+
+install.packages("IRkernel")
+IRkernel::installspec()
+
+If using Conda, register the environment explicitly:
+
+IRkernel::installspec(name = "r_env", displayname = "R (r_env)")
+
+Install Jupyter (if needed)
+
+pip install notebook
+
+or
+
+conda install jupyter
+
+3. Launch Jupyter
+
+Make sure you are in the correct environment, then run:
+
+jupyter notebook
+
+Open the .ipynb file and select the R kernel.
+
+4. Notes
+
+Ensure R and Jupyter are installed in the same environment. Additional system libraries (PROJ_LIB) for spatial operations are required but installed directly from the notebooks.
+
 ---
 
 #### **1) Empirics – Model**
@@ -149,12 +192,12 @@ However, the code and datafiles are structured in a way that simulation and netw
 
 ---
 
-#### **7) Simulation – Treatment
+#### **7) Simulation – Treatment**
 
 - **Extended Data Figure 2:** Spatial distribution of offtakers targeted by spatially targeted CfD regime
 
 ---
 
-#### **8) SI - Carbon Price
+#### **8) SI - Carbon Price**
 
 - **Supplementary Figure 7:** Carbon price projections in EUR/t C02 equivalent

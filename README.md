@@ -130,7 +130,21 @@ Open the .ipynb file and select the R kernel.
 
 4. Notes
 
-Ensure R and Jupyter are installed in the same environment. Additional system libraries (PROJ_LIB) for spatial operations are required but installed directly from the notebooks.
+Ensure R and Jupyter are installed in the same environment. The notebooks include a setup cell that (i) sets PROJ_LIB for PROJ/CRS support in some conda/docker environments, and (ii) automatically installs and loads required R packages via install.packages(). System dependencies for geospatial packages (e.g., GDAL, GEOS, PROJ) must be available on the machine (provided by conda or the OS).
+
+If the sf package fails to install, the required system libraries are likely missing. In that case, install them first. For Conda users, run:
+
+conda install -c conda-forge r-sf
+
+or
+
+conda install -c conda-forge gdal geos proj
+
+On Ubuntu/Debian systems, run:
+
+sudo apt install libgdal-dev libgeos-dev libproj-dev
+
+Then restart R and reinstall sf.
 
 ---
 

@@ -152,7 +152,7 @@ Then restart R and reinstall sf.
 
 ---
 
-#### **1) Empirics – Model**
+#### **1) 01 - Empirics – Model**
 
 - Cost competitiveness forecast and extension to 2100
 - Estimation of empirical diffusion model (fitted to natural gas power plants)
@@ -166,7 +166,7 @@ Then restart R and reinstall sf.
 
 ---
 
-#### **2) Empirics – Marginal Effects**
+#### **2) 02 - cEmpirics – Marginal Effects**
 
 - Marginal effects calculation
 - Figure 2: Average marginal effects of spatial spilloverts and cost competitiveness on aqdoption probability
@@ -175,7 +175,7 @@ Then restart R and reinstall sf.
 
 ---
 
-#### **3) Simulation – Model**
+#### **3) 03 - Simulation – Model**
 
 - Prepares offtaker dataset for analysis (aggregation of heavy duty, etc.)",
 - Calculate predictor variables on the H2 offtaker dataset",
@@ -189,10 +189,11 @@ Then restart R and reinstall sf.
 (Uses Figure 5 code; produced when Empirics-Model and Simulation-Model are first run for carbon_price_setting = flat_carbon_price)\n",
 - **Extended Data Tables 2 and 3**
 
-Use Simulation-Model-Standalone if there is no access to S&P Capital IQ, this version draws the model coefficients from the datafile.
+**Use 03-Simulation-Model-Standalone if there is no access to S&P Capital IQ, this version draws the model coefficients from the datafile.**
+
 ---
 
-#### **4) Network – Centrality**
+#### **4) 04 - Network – Centrality**
 
 -Computation of network centrality scores (marker for spillover potential)
 - **Figure 3:** Spatial spillover poptential of green H2 offtakers across regions
@@ -201,7 +202,7 @@ Use Simulation-Model-Standalone if there is no access to S&P Capital IQ, this ve
 - **Extended Data Figure 3:** Distribution of spillover potential excl. heating
 
 ---
-#### **5) Simulation – Policy - Intervention**
+#### **5) 05 - Simulation – Policy - Intervention**
 
 - 5a: Policy intervention for controlled setting
 - 5b: Policy intervention for EHB style setting
@@ -209,7 +210,7 @@ Use Simulation-Model-Standalone if there is no access to S&P Capital IQ, this ve
 - **Supplementary Figure 16:** Policy effectiveness for different centrality criterion weights
 ---
 
-#### **6) Simulation – Policy - Effectiveness**
+#### **6) 06 - Simulation – Policy - Effectiveness**
 
 - **Figure 6:** Differences in expected green H2 demand and policy cost effectiveness for a spatially targeted demand-side CfD
 - **Supplementary Figure 14:** Differences in expected green H2 demand and policy cost effectiveness for a spatially targeted demand-side CfD: Results for alternative baselines (Controlled setting)

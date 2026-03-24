@@ -218,7 +218,7 @@ Then restart R and reinstall sf.
 
 ---
 
-#### **8) SI - Saturation**
+#### **7) SI - Saturation**
 
 - **Supplementary Figure 11:** Cost trajectories for alternative decarbonization technologies in EUR MWh
 

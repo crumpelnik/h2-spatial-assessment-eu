@@ -154,38 +154,42 @@ Then restart R and reinstall sf.
 
 #### **1) Empirics – Model**
 
-- Estimation of the empirical diffusion model (fitted to natural gas power plants)
-- Cost competitiveness forecast and extension to 2100.
-- **Extended Data Figure 1:** Distribution of predictors in the diffusion model  
-- **Supplementary Figure 1:** Capacity of natural gas power plants  
-- **Supplementary Figure 2:** Spatial autocorrelation  
-- **Supplementary Figure 3:** Serial autocorrelation  
-- **Supplementary Figure 6:** Cost competitiveness trajectory  
-- **Supplementary Table 1:** Collinearity test  
+- Cost competitiveness forecast and extension to 2100
+- Estimation of empirical diffusion model (fitted to natural gas power plants)
+- Extended Data Figure 2: Distribution of predictors in the diffusion model
+- Supplementary Figure 1: Capacity of natural gas power plants and cogeneration plants
+- Supplementary Figure 2: Spatial dependency of natural gas power plant siting over time
+- Supplementary Figure 3: Natural gas power plant additions by year and generation technology
+- Supplementary Figure 8: Spatial autocorrelation
+- Supplementary Figure 9: Serial autocorrelation
+- Supplementary Figure 10: Cost competititveness trajectory
 
 ---
 
 #### **2) Empirics – Marginal Effects**
 
 - Marginal effects calculation
-- **Figure 2:** Average marginal effects of spatial spillovers and cost competitiveness on adoption probability  
-- **Supplementary Figure 4:** Average marginal effects of cost competitiveness and spatial spillovers using wind as historical analogue  
-  - Uses Figure 2 code; produced when *Empirics – Model* is first run for wind  
+- Figure 2: Average marginal effects of spatial spilloverts and cost competitiveness on aqdoption probability
+- Supplementary Figure 4: Average marginal effects of cost competitiveness and spatial spillovers on adoption using cogeneration plants as historical analogue. (uses Figure 2 code, produces SF 4 when EMPIRICS - MODEL Module is with Cogenerator = Yes filter before)
+- Supplementary Figure 6: Average marginal effects of cost competitiveness and spatial spillovers on adoption using cogeneration plants as historical analogue. (uses Figure 2 code, produces SF 4 when EMPIRICS - MODEL Module is run for Wind before)
 
 ---
 
 #### **3) Simulation – Model**
 
-- Preparation of offtaker dataset (e.g. aggregation of heavy-duty transport)
-- Calculation of predictor variables on the hydrogen offtaker dataset
-- Simulation of baseline green hydrogen demand projections
-- **Figure 5:** Baseline projections of expected green hydrogen demand before policy intervention
-- - **Supplementary Figure 5:** Baseline projections of expected green hydrogen demand before policy intervention using wind as historical analogue
-  - Uses Figure 5 code; produced when *Empirics – Model* is first run for wind
-  - **Supplementary Figure 8:** Baseline projections using wind as historical analogue assuming flat carbon prices. 
-  - Uses Figure 5 code; produced when *Empirics – Model* and *Simulation – Model* are first run with carbon_price_setting = flat_carbon_price
+- Prepares offtaker dataset for analysis (aggregation of heavy duty, etc.)",
+- Calculate predictor variables on the H2 offtaker dataset",
+- Simulates green H2 demand baseline projections",
+- **Figure 5: ** Baseline projections of expected green H2 demand before policy intervention\n",
+- Supplementary Figure 5: Baseline projections of expected green hydrogen demand before policy intervention using cogeneration plants as historical analogue,
+(Uses Figure 5 code; produced when Empirics-Model is first run for cogeneration plants)\n",
+- **Supplementary Figure 7:** Baseline projections of expected green hydrogen demand before policy intervention using wind plants as historical analogue,
+(Uses Figure 5 code; produced when Empirics-Model is first run for wind plants)\n",
+- **Supplementary Figure 13:** Baseline projections of expected green hydrogen demand with flat carbon pricing,
+(Uses Figure 5 code; produced when Empirics-Model and Simulation-Model are first run for carbon_price_setting = flat_carbon_price)\n",
 - **Extended Data Tables 2 and 3**
-- **Supplementary Figure 11:** Map of baseline green H2 demand prior to policy intervention (central saturation + mean cost scenario, 2050)
+
+Use Simulation-Model-Standalone if there is no access to S&P Capital IQ, this version draws the model coefficients from the datafile.
 ---
 
 #### **4) Network – Centrality**
@@ -193,29 +197,34 @@ Then restart R and reinstall sf.
 -Computation of network centrality scores (marker for spillover potential)
 - **Figure 3:** Spatial spillover poptential of green H2 offtakers across regions
 - **Figure 4:** Spatial spillover poptential of green H2 offtakers across sectors
+- **Extended Data Figure 1:** Map of H2 valleys and corridors
 - **Extended Data Figure 3:** Distribution of spillover potential excl. heating
 
 ---
-#### **6) Simulation – Policy - Intervention**
+#### **5) Simulation – Policy - Intervention**
 
-- Policy intervention simulation
-
+- 5a: Policy intervention for controlled setting
+- 5b: Policy intervention for EHB style setting
+- 5c: Policy intervention for EHB style setting - loop across multiple centrality criterion weights
+- **Supplementary Figure 16:** Policy effectiveness for different centrality criterion weights
 ---
 
 #### **6) Simulation – Policy - Effectiveness**
 
--  **Figure 6:** Differences in expected green H2 demand and policy cost effectiveness for a spatially targeted demand-side CfD
-- **Supplementary Figure 9:** Differences in expected green H2 demand and policy cost effectiveness for a spatially targeted demand-side CfD: Results for alternative baselines
-- **Supplementary Figure 10:** Expected green H2 demand and policy cost effectiveness for a spatially targeted demand-side CfD
+- **Figure 6:** Differences in expected green H2 demand and policy cost effectiveness for a spatially targeted demand-side CfD
+- **Supplementary Figure 14:** Differences in expected green H2 demand and policy cost effectiveness for a spatially targeted demand-side CfD: Results for alternative baselines (Controlled setting)
+- **Supplementary Figure 15:** Differences in expected green H2 demand and policy cost effectiveness for a spatially targeted demand-side CfD: Results for alternative baselines (EHB setting)
 
 ---
 
-#### **7) Simulation – Treatment**
+#### **8) SI - Saturation **
 
-- **Extended Data Figure 2:** Spatial distribution of offtakers targeted by spatially targeted CfD regime
+- **Supplementary Figure 11:** Cost trajectories for alternative decarbonization technologies in EUR MWh
+
+#### **7) SI - Carbon Price **
+
+- **Supplementary Figure 12:** Carbon price projections in EUR/t C02 equivalent
 
 ---
 
-#### **8) SI - Carbon Price**
 
-- **Supplementary Figure 7:** Carbon price projections in EUR/t C02 equivalent

@@ -67,6 +67,10 @@ Original database of 14,000+ potential green hydrogen offtakers aggregating info
 
 Supplementary file documenting the estimation, sourcing and allocation of emissions benchmarks and hydrogen-specific energy consumption factors on a sub-activity level.
 
+5) supplementary_figure_11_data.xlsx
+
+Supplementary file documenting the estimation of levelized technology costs for decarbonization technologies alternative to green H2 (CCUS, direct electrification, biomass). Input for supplementary figure 11.
+
 **Note:**  
 The empirical analysis (Code Module *Empirics – Model*) uses natural gas power plant data from **S&P Capital IQ**, which is a commercial data source. Running this module therefore requires a valid S&P Capital IQ subscription.
 

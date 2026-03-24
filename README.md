@@ -91,7 +91,7 @@ Extracted coefficients from regression in empirical analysis module. This file c
 
 Includes all code required to run the analysis and reproduce the figures.  
 The code is structured into sequential modules that build on one another and must be run in order. Note that for running Modules 1 and 2 (Empirical analysis) access to S&P Capital IQ proprietary and commercial data is required (see above).
-However, the code and datafiles are structured in a way that simulation and network analysis (starting with module 3) can be run without running the empirical analysis beforehand, with limited adjustments (commenting in and out) in Module 3.
+However, the code and datafiles are structured in a way that simulation and network analysis (starting with module 3) can be run without running the empirical analysis beforehand, with limited adjustments (commenting in and out) in Module 3. 03-simulation-model-standalone already has been adjusted to work without input from the two empirical modules.
 
 #### How to run this code
 

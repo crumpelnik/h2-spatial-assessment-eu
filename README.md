@@ -150,6 +150,8 @@ sudo apt install libgdal-dev libgeos-dev libproj-dev
 
 Then restart R and reinstall sf.
 
+Run modules sequentially.
+
 ---
 
 #### **1) 01 - Empirics – Model**
@@ -166,7 +168,7 @@ Then restart R and reinstall sf.
 
 ---
 
-#### **2) 02 - cEmpirics – Marginal Effects**
+#### **2) 02 - Empirics – Marginal Effects**
 
 - Marginal effects calculation
 - Figure 2: Average marginal effects of spatial spilloverts and cost competitiveness on aqdoption probability

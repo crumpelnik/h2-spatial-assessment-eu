@@ -232,4 +232,5 @@ Run modules sequentially.
 
 ---
 
+Expected run time is less than 3 hours on standard hardware.
 

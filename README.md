@@ -232,5 +232,5 @@ Run modules sequentially.
 
 ---
 
-Expected run time is less than 3 hours on standard hardware.
+Expected run time is less than 7 hours on standard hardware (policy simulations in Module 06 can take longer if number of simulations is set high). Expected installation time is less than 1 hour. No non-standard hardware is required. The software has been implemented and tested on 'R version 4.4.3 (2025-02-28)'.
 

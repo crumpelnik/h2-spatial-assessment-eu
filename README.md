@@ -4,6 +4,8 @@ Data and code repository for
 **Rumpelnik, C., Zakeri, B., Surana, K.**  
 *Spatially Informed Demand-Side Policies for Green Hydrogen Diffusion in Europe.*
 
+The repository is indexed on Zenodo under 10.5281/zenodo.204246329.
+
 ---
 
 ## Repository structure
